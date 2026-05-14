@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heritage Pulse SA | Home</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">HeritagePulse SA</div>
+        <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ArchiveServlet.do">Archive</a></li>
+        <li><a href="SpotlightServlet.do">Spotlight</a></li> <li><a href="apothecary.jsp">Apothecary</a></li>
+         
+         
+         <li><a href="UploadServlet.do" style="background-color: var(--primary-brown); color: white; padding: 8px 15px; border-radius: 5px; font-weight: bold;">Share a Story🤍</a></li>
+         <li><a href="login.jsp">Login</a></li>
+        </ul>
+    </nav>
+    
+    
+
+    <header class="search-container">
+        <h1>Experience the Pulse of South Africa</h1>
+        <p>A bridge between generations, digitizing attire, cuisine, and medicine.</p>
+        
+        <div id="map-container" style="margin-top: 40px; display: flex; justify-content: center;">
+            
+            <div class="map-placeholder interactive-pulse" onclick="window.location.href='EventServlet.do'">
+                <div class="pin-icon">📍</div>
+                <h3 style="color: var(--primary-brown); margin-bottom: 5px;">Activate Cultural GPS</h3>
+                <p style="color: #666; font-size: 0.95rem; margin-bottom: 15px;">
+                    Sync your location to discover live traditional events and ceremonies near you.
+                </p>
+                <button class="btn-search" style="border-radius: 5px; pointer-events: none;">Detect My Location</button>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="results-section">
+        <h2 class="section-title" style="text-align: center; margin-bottom: 30px;">The Cultural Guardian Experience</h2>
+        
+        <div class="results-grid">
+            <div class="remedy-card">
+             <h3>Living Archive</h3>
+             <p>Explore traditional stories, attire, and recipes categorized by tribe and province.</p>
+             <a href="ChronicleServlet.do" class="btn-search btn-full" style="display: block; text-decoration: none; text-align: center;">View Chronicles</a>
+            </div>
+
+            <div class="remedy-card">
+                <h3>The Apothecary</h3>
+                <p>A searchable guide of verified indigenous remedies and preparation methods.</p>
+                <a href="apothecary.jsp" class="btn-search btn-full" style="display: block; text-decoration: none; text-align: center;">Search Remedies</a>
+            </div>
+
+            <div class="remedy-card">
+                <h3>Record Oral History</h3>
+                <p>Upload video or audio of elders explaining rituals to ensure oral history is digitized.</p>
+                <a href="UploadServlet.do" class="btn-search btn-full" style="display: block; text-decoration: none; text-align: center;">Start Recording</a>
+            </div>
+        </div>
+    </main>
+
+    <section class="results-section" style="background: white; border-top: 1px solid #ddd; text-align: center;">
+        <h3 style="color: #5d4037; margin-bottom: 10px;">Interest Matching</h3>
+        <p style="margin-bottom: 20px;">Follow a tradition to receive notifications about upcoming events related to your heritage.</p>
+        <button class="btn-search" style="border-radius: 5px; float: none;">Follow My Heritage</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Heritage Pulse SA | Preserving Our Roots</p>
+    </footer>
+
+</body>
+</html>
